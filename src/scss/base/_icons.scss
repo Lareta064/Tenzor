@@ -1,0 +1,68 @@
+.svg-fb, .svg-vk, .svg-wa, .svg-yout, .svg-inst{
+	fill: #ffffff;
+	cursor:pointer;
+	width: 22px;
+	height: 22px;
+}
+.svg-fb{
+	width: 10px;
+	height: 21px;
+}
+.svg-yout{
+	height: 17px;
+}
+.svg-vk{width: 23px; height: 14px;}
+.svg-chevron-down{
+	stroke: #ffffff;
+	width: 10px;
+	height: 6px;
+}
+.svg-chevron-right{
+	stroke: $ac1;
+	width: 50px;
+	height: 50px;
+}
+.svg-logo{
+	width: 43px;
+	height: 44px;
+	fill:#000000 ;
+}
+.svg-search{
+	width: 28px;
+	height: 28px;
+	stroke: #ffffff;
+}
+.svg-user{
+	width: 24px;
+	height: 24px;
+	stroke: #ffffff;
+
+}
+.svg-map-pin{
+	width: 25px;
+	height: 25px;
+	stroke: #ffffff;
+}
+.social-contacts{
+	display: flex;
+	align-items: center;
+	a{
+		display: flex;
+		align-items:center;
+		&:hover{
+			svg{fill: rgba(255,255,255, 1)!important;}
+		}
+		svg{transition:.3s; fill: rgba(255,255,255, .5)!important;}
+	}
+	a+a{margin-left: 20px;}
+}
+.social-contacts__column{
+	.social-contacts{
+		flex-direction: column;
+		a>svg{fill: rgba(255,255,255, 1)!important;}
+		a:hover{
+			svg{fill: rgba(255,255,255, .5)!important;}
+		}
+		a+a{margin-left: 0; margin-top: 24px;}
+	}
+}
