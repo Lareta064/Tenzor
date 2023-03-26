@@ -1,5 +1,9 @@
 header.header{
 	height: 700px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 33px;
+	&>*{width: 100%;}
 	.header-nav{
 		padding-top: 54px;
 	}
@@ -22,6 +26,25 @@ header.header{
 	.header-group{
 		column-gap:30px;
 
+	}
+	.header-content{
+		display: flex;
+		
+		&__wrapper{
+			display: flex;
+			flex-direction: column;
+			color: $white;
+			height: 100%;
+			padding-left: 180px;
+			&>*{width: 100%;}
+		}
+		flex-grow: 1;
+		
+		.header__bottom-text{margin-top: auto;}
+	}
+	.header-social{
+		bottom: 0;
+		left: 0;
 	}
 }
 .header-lang{
