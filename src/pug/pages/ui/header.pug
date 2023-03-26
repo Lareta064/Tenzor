@@ -1,0 +1,52 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				.container-dashboard__content(style="background-color: #000000; color: #ffffff; padding-bottom: 40px;")
+					header.header(style="bacground-image:'url(./img/race-bg.jpg)'")
+						.container-xl
+							.header-content
+								a(href="#!").logo.logo-white
+									+svgIcon('logo')
+								
+								.header-menu
+									ul
+										li
+											a(href="") О клубе
+										li.active
+											a(href="") Услуги
+											+svgIcon('chevron-down')
+										li
+											a(href="") Академия TSA
+										li
+											a(href="").txt-upper Success race
+										li
+											a(href="").txt-upper Tenzor international cup
+										li
+											a(href="") Еще...
+								.contacts-wrapper
+									a(href="tel:84951213777") +7(495) 121-3-777
+								.header-group.flex-v-center
+									.button-icon
+										+svgIcon('map-pin')
+									.button-icon
+										+svgIcon('user')
+									.button-icon
+										+svgIcon('search')

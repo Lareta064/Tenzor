@@ -1,0 +1,16 @@
+extends ../layouts/layout.pug
+
+block content
+	+header({
+		bgImg: 'race-bg',
+		menuItems: [
+			{text:'О клубе', link: '#!'},
+			{text:'Услуги', link: '#!', icon:'true'},
+			{text:'Академия TSA', link: '#!'},
+			{text:'Success race', link: '#!', addClass:'txt-upper active'},
+			{text:'Tenzor international cup', link: '#!', addClass:'txt-upper'},
+			{text:'Еще...', link: '#!'},
+		]
+	})(class="overlay-block")
+block variables
+	-var title = "Success race";

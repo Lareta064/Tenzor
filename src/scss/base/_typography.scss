@@ -1,0 +1,34 @@
+.h1{
+	color: $white;
+}
+.h1, .h2,[class^="title-"]{
+	font-size: 90px;
+	line-height: 1.5;
+	font-weight: 600;
+	
+}
+.h2{
+	font-size: 47px;
+}
+.title-15, .title-18{
+	letter-spacing: 0.15em;
+	font-size: 15px;
+}
+.title-18{
+	font-size: 18px;
+}
+.txt-16{
+	font-size: 16px;
+}
+.txt-accent{
+	color: $ac1;
+}
+.txt-dark{
+	color: $dark;
+}
+.txt-gray{
+	color: $gray!important;
+}
+.txt-upper{
+	text-transform: uppercase;
+}

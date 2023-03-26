@@ -16,6 +16,7 @@
 	stroke: #ffffff;
 	width: 10px;
 	height: 6px;
+	fill: transparent;
 }
 .svg-chevron-right{
 	stroke: $ac1;
@@ -27,21 +28,20 @@
 	height: 44px;
 	fill:#000000 ;
 }
-.svg-search{
+.svg-search, .svg-user, .svg-map-pin{
 	width: 28px;
 	height: 28px;
 	stroke: #ffffff;
+	fill: transparent;
+	transition: .3s;
 }
 .svg-user{
 	width: 24px;
 	height: 24px;
-	stroke: #ffffff;
-
 }
 .svg-map-pin{
 	width: 25px;
 	height: 25px;
-	stroke: #ffffff;
 }
 .social-contacts{
 	display: flex;
@@ -64,5 +64,15 @@
 			svg{fill: rgba(255,255,255, .5)!important;}
 		}
 		a+a{margin-left: 0; margin-top: 24px;}
+	}
+}
+.round-icon{
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	flex-shrink: 0;
+	border: 1px solid $ac1;
+	img{
+		object-fit: cover;
 	}
 }

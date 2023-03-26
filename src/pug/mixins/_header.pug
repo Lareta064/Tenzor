@@ -1,0 +1,35 @@
+mixin headerMenu(obj)
+	.header-menu
+		ul
+			each item in obj
+				li(class=(item.addClass ? " "+ item.addClass : ""))
+					if item.icon == 'true'
+						a(href=""+ item.link) #{item.text}
+						+svgIcon('chevron-down')
+					else
+						a(href=""+ item.link) #{item.text}
+					
+					
+				
+mixin header(arg)
+	header.header(style="background-image:url(./img/"+ arg.bgImg +".jpg)")&attributes(attributes)
+		.header-nav
+			.container-xl
+				.header-nav__content
+					a(href="#!").logo.logo-white
+						+svgIcon('logo')
+					
+					+headerMenu(arg.menuItems)
+					
+					.contacts-wrapper
+						a(href="tel:84951213777") +7(495) 121-3-777
+					.header-group.flex-v-center
+						.button-icon
+							+svgIcon('map-pin')
+						.button-icon
+							+svgIcon('user')
+						.button-icon
+							+svgIcon('search')
+					.header-lang
+						a(href="#!").txt-gray Rus
+						a(href="#!") Eng
