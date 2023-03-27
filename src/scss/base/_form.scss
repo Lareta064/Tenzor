@@ -26,30 +26,27 @@ select:-webkit-autofill:focus {
     padding-right: 18px;
   }
 }
-.form-item.input-icon{
-  input{padding-right: 40px;}
-  .input-icon__img{
-    position: absolute;
+.form-item .input-icon__img{
+  position: absolute;
     top: 50%;
-    right: 18px;
     transform:translateY(-50%);
     z-index: 2;
     width: 24px;
     height: 24px;
     display: flex;
     &>*{margin: auto;}
+}
+.form-item.input-icon{
+  input{padding-right: 40px;}
+  .input-icon__img{
+    right: 18px;
   }
 }
 .form-item.input-icon-left{
    input{padding-right: 18px; padding-left:40px}
   
   .input-icon__img{
-    position: absolute;
-    top: 50%;
-    right: auto;
     left:18px;
-    transform:translateY(-50%);
-    z-index: 2;
   }
 }
 .toggle-pass{
@@ -63,4 +60,44 @@ select:-webkit-autofill:focus {
    
   }
  
+}
+.search-panel-form{
+  border-bottom:1px solid black;
+  display: flex;
+  align-items: center;
+}
+.form-item.form-item--search{
+  input{
+    border: none;
+    
+    padding-left: 46px;
+    border-radius: 0;
+    font-size: 30px;
+    
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    &::placeholder{
+      color: $gray;
+      letter-spacing: 0.05em;
+    }
+
+  }
+  .input-icon__img{
+    left: 5px;
+  }
+}
+.search-panel-form{
+  position: absolute;
+  .text-btn{
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    transition: .5s;
+    &:hover{
+      color: $ac1;
+    }
+    
+    }
 }
