@@ -1,0 +1,20 @@
+//======================================= 
+	панель поиска в шапке 
+//=======================================
+.search-panel.modal-block#header-search-panel(frame-modal='search-panel')
+	.container-xl
+		.search-panel__header.flex-justify
+			a(href="#!").logo
+				+svgIcon('logo')
+			.close-btn(frame-close)
+		
+		//======  форма =============
+		.search-panel-form__wrapper
+			.container
+				form.search-panel-form(action="" method="method")
+					.form-item.input-icon-left.form-item--search
+						span.input-icon__img
+							+svgIcon('search')
+						input(type="text" placeholder="Поиск")
+					.form-btn
+						button(type="submit").text-btn.txt-upper ПОИСК

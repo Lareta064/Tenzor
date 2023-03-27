@@ -62,9 +62,7 @@ select:-webkit-autofill:focus {
  
 }
 .search-panel-form{
-  border-bottom:1px solid black;
-  display: flex;
-  align-items: center;
+
 }
 .form-item.form-item--search{
   input{
@@ -86,8 +84,38 @@ select:-webkit-autofill:focus {
     left: 5px;
   }
 }
+/*==============search-panel=================*/
+.search-panel{
+  position: fixed;
+  padding-top: 44px;
+  top: -100px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 3;
+  
+  height: 0;
+  overflow: hidden;
+  transition: .3s;
+  .search-panel-form{
+    position: absolute;
+    max-width: 1200px;;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+        border-bottom:1px solid black;
+    display: flex;
+    align-items: center;
+    .form-item{flex-grow: 1;}
+  }
+}
+.search-panel.visible{
+    height: 497px;
+    top:0;
+}
 .search-panel-form{
-  position: absolute;
+  
   .text-btn{
     padding: 10px;
     text-align: center;
