@@ -31,10 +31,13 @@
 .svg-search, .svg-user, .svg-map-pin{
 	width: 28px;
 	height: 28px;
-	stroke: #ffffff;
+	stroke: #000000;
 	fill: transparent;
 	transition: .3s;
 }
+.header-nav__content{
+	.svg-search, .svg-user, .svg-map-pin{stroke: #ffffff;}
+} 
 .svg-user{
 	width: 24px;
 	height: 24px;
@@ -74,5 +77,32 @@
 	border: 1px solid $ac1;
 	img{
 		object-fit: cover;
+	}
+}
+.close-btn{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	cursor:pointer;
+	&:after, &:before{
+		content: '';
+		height: 1px;
+		position: absolute;
+		background-color: rgba(160, 160, 160, 1);
+		
+		top:50%;
+		width:28px;
+		left:50%;
+		transform: translate(-50%, -50%) rotate(-45deg);
+		transition: .3s;
+		
+	}
+	&:after{
+		transform: translate(-50%, -50%) rotate(45deg);
+		
+	}
+	&:hover{
+		 &:before{transform: translate(-50%, -50%) rotate(45deg);background-color: $ac2;}
+		 &:after{transform: translate(-50%, -50%) rotate(-45deg);background-color: $ac2;}
 	}
 }

@@ -1,0 +1,32 @@
+.btn, input[type="submit"], a.btn{
+	display: inline-flex;
+	align-items:center;
+	justify-content: center;
+	cursor:pointer;
+	white-space: nowrap;
+	height: 50px;
+	border:1px solid $ac1;
+	background-color: $ac1;
+	line-height: 48px;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 7px;
+	letter-spacing: 0.15em;
+    text-transform: uppercase;
+	color: $white;
+	padding-left: 56px;
+	padding-right: 56px;
+	transition: .3s;
+	outline:none;
+}
+.btn:hover{
+	background-color: $ac2;
+}
+.btn.btn--outline{
+	background-color: #fff;
+	color: $ac2;
+	&:hover{
+		color: $white;
+		background-color: $ac2;
+	}
+}
