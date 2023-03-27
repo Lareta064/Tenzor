@@ -1,0 +1,39 @@
+.particip{
+	padding-top: 75px;
+	min-height: 592px;
+	.divide-img-left{
+		
+		img{
+			height: 456px;
+			width: auto;
+		}
+	}
+	.num-list{
+		max-width: 400px;;
+	}
+	.num-list +.num-list{margin-top: 40px;}
+}
+.num-list{
+	&__top{
+		width: fit-content;
+		position: relative;
+		
+		&:after{
+			content: '';
+			width: 30px;
+			height: 1px;
+			background-color: #000000;
+			position: absolute;
+			top: 50%;
+			right: -3px;
+			transform: translate(100%, -50%);
+
+		}
+	}
+	&__text{
+		padding-top: 12px;
+		font-size: 19px;
+		color: $dark;
+		padding-bottom: 7px;
+	}
+}

@@ -4,17 +4,22 @@
 }
 .h1, .h2,[class^="title-"]{
 	font-size: 90px;
-	line-height: 1.5;
 	font-weight: 600;
 	
 }
 .h2{
 	font-size: 47px;
 }
+.title-box{
+
+}
+
 .title-15, .title-18{
 	letter-spacing: 0.15em;
 	font-size: 15px;
+	font-weight: 600;
 }
+.title-15{text-transform: uppercase;}
 .title-18{
 	font-size: 18px;
 }

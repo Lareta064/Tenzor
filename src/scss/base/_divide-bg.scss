@@ -1,0 +1,44 @@
+.divide-section{
+	overflow: hidden;
+	.container{position: relative;
+	}
+	.divide-bg{
+		width: calc(50vw + 50% + 100px);
+		background-color: $greyBg;
+		min-height: 300px;
+		margin-top: -18px;
+		margin-left: 0;
+		position: relative;
+		padding-top: 55px;
+		padding-bottom: 55px;
+		&:before{
+			content: '';
+			width: 100px;
+			position: absolute;
+			top: 0;
+			left: -100px;
+			bottom: 0;
+			background-color: $greyBg;
+		}
+	}
+	.divide-img-left{
+		position: absolute;
+		top: 0;
+		left: -85px;
+		transform: translateX(-100%);
+		background-position: right;
+		z-index: 3;
+	}
+	.divide-img-right{
+		position: absolute;
+		top: 0;
+		right: -100px;
+		z-index: 3;
+		img{
+			width: 685px;
+			height: 455px;
+			object-fit: cover;
+		}
+	}
+
+}
