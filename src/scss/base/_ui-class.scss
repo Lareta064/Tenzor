@@ -1,5 +1,8 @@
-.flex-box, .flex-center, .flex-col, .flex-v-center, .flex-justify{
+.flex-box, .flex-center, .flex-col, .flex-v-center, .flex-justify,.center-wrapper{
 	display: flex;
+}
+.center-wrapper{
+	justify-content: center;
 }
 .flex-justify{
 	align-items: center;

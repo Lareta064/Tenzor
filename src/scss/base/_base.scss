@@ -135,9 +135,7 @@ input[type="submit"] {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 }
-.container-xl{
-	width: 1486px;
-}
+
 .container,.container-xl{
 	width: 1230px;
 	padding-left: 15px;
@@ -148,4 +146,9 @@ input[type="submit"] {
 
 .container-xl{
 	width: 1515px;
+}
+.main{
+	padding-top: 100px;
+	padding-bottom: 120px;
+	background-color: #fff;
 }
