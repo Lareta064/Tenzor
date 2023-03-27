@@ -10,9 +10,44 @@ mixin headerMenu(obj)
 						a(href=""+ item.link) #{item.text}
 					
 					
-				
+mixin fullMenu(arg)
+	//============ большое меню на белом фоне ============
+	.full-menu
+		.container
+			.full-menu__content
+				ul
+					li
+						a(href="#!") О клубе
+					li
+						a(href="#!") Услуги
+						.submenu-list
+							a(href="#!") Корпоративные регаты и тимбилдинг
+							a(href="#!") Частные мероприятия
+							a(href="#!") Аренда яхт
+							a(href="#!") Страхование участников
+
+					li
+						a(href="#!") Академия TSA
+						.submenu-list
+							a(href="#!") Детская парусная академия
+							a(href="#!") Тренировки для взрослых
+							a(href="#!") Расписание и стоимость занятий
+							a(href="#!") Записаться на занятие
+					li
+						a(href="#!") SUCCESS RACE
+					li
+						a(href="#!") TENZOR INTERNATIONAL CUP
+					li
+						a(href="#!") События клуба
+					li
+						a(href="#!") Магазин
+					li
+						a(href="#!") Сми о нас
+					li
+						a(href="#!") Контакты				
 mixin header(arg)
 	header.header(style="background-image:url(./img/"+ arg.bgImg +".jpg)")&attributes(attributes)
+		//======= навигация в шапке =============
 		.header-nav
 			.container-xl
 				.header-nav__content
@@ -33,6 +68,8 @@ mixin header(arg)
 					.header-lang
 						a(href="#!").txt-gray Rus
 						a(href="#!") Eng
+			//=========большое меню на белом фоне =========
+			+fullMenu
 		.header-content.mt-186
 			.container-xl.pos-rel
 				.header-social.pos-abs
