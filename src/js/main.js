@@ -46,7 +46,25 @@ document.addEventListener("DOMContentLoaded", function (){
 	// 	this.classList.remove('active');
 	// });
 
+   /**************Показать большое меню в шапке по ховеру на ссылки************** */
+   const headerNav = document.querySelector('#header-menu');
+   const fullMenu = document.querySelector('#full-menu');
+   if(fullMenu){
+	const headerMenuLink = headerNav.querySelectorAll('li');
+		
+		headerMenuLink.forEach((el) => {
+			el.addEventListener('mouseenter', function(){
+				fullMenu.classList.add('visible');
+				 document.querySelector('.header-nav').classList.add('header-nav--white');
+			});
+		});
 
+
+	fullMenu.addEventListener('mouseleave', function(){
+		document.querySelector('.header-nav').classList.remove('header-nav--white');
+		this.classList.remove('visible');
+	});
+   }
 	// //========большой сладер документов =======//
 	// let docSlider = new Swiper(".doc-slider", {
     //    slidesPerView: 1,

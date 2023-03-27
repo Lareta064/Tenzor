@@ -1,5 +1,5 @@
 mixin headerMenu(obj)
-	.header-menu
+	.header-menu#header-menu
 		ul
 			each item in obj
 				li(class=(item.addClass ? " "+ item.addClass : ""))
@@ -12,7 +12,7 @@ mixin headerMenu(obj)
 					
 mixin fullMenu(arg)
 	//============ большое меню на белом фоне ============
-	.full-menu
+	.full-menu#full-menu
 		.container
 			.full-menu__content
 				ul
