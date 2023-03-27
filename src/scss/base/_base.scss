@@ -108,8 +108,12 @@ button:focus,
 input:focus {
 	outline: none;
 	border: none;
+	font-family: inherit;
 }
-
+input::placeholder{
+	font-family: inherit;
+	font-size:  inherit;
+}
 button {
 	padding: 0;
 	background-color: transparent;

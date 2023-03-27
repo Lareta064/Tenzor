@@ -24,6 +24,20 @@
 .txt-accent{
 	color: $ac1;
 }
+.link-accent{
+    display: block;
+    margin-top: 8px;
+    margin-left: auto;
+    width: fit-content;
+    letter-spacing: 0.04em;
+    font-size: 15px;
+    padding-bottom: 1px;
+	color: $ac1;
+    border-bottom:1px solid $ac1;
+    &:hover{
+      opacity: .5;
+    }
+}
 .txt-dark{
 	color: $dark;
 }

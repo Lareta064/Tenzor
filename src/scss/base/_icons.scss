@@ -46,6 +46,21 @@
 	width: 25px;
 	height: 25px;
 }
+.svg-eye{
+	width: 22px;
+	height: 17px;
+	stroke: #888888;
+	fill: transparent;
+	&.svg-eye-active{
+		stroke: $ac1;
+	}
+}
+
+.icon-warning{
+	width: 22px;
+	height: 24px;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='24' viewBox='0 0 22 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='11' cy='13' r='10.5' stroke='%23FF3A3A'/%3e%3cpath d='M10.552 6.8H11.48L11.32 14.784H10.712L10.552 6.8ZM11.016 18.064C10.8347 18.064 10.68 18 10.552 17.872C10.424 17.744 10.36 17.5893 10.36 17.408C10.36 17.2267 10.424 17.072 10.552 16.944C10.68 16.816 10.8347 16.752 11.016 16.752C11.208 16.752 11.368 16.816 11.496 16.944C11.624 17.072 11.688 17.2267 11.688 17.408C11.688 17.5893 11.624 17.744 11.496 17.872C11.368 18 11.208 18.064 11.016 18.064Z' fill='%23FF3A3A'/%3e%3c/svg%3e");
+}
 .social-contacts{
 	display: flex;
 	align-items: center;

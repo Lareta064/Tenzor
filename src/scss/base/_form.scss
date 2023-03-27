@@ -7,8 +7,60 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border-bottom: 1px solid #01203c ;
-  -webkit-text-fill-color: #ffffff;
-  -webkit-box-shadow: 0 0 0px 1000px #01203c inset;
+  border-bottom: 1px solid #ffffff ;
+  -webkit-text-fill-color: #000000;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
   transition: background-color 5000s ease-in-out 0s;
+}
+.form-item{
+  position: relative;
+  
+  input{
+    display: block;
+    width: 100%;
+    border: 1px solid $inpbr;
+    border-radius: 5px;
+    height: 60px;
+    font-size: 16px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+.form-item.input-icon{
+  input{padding-right: 40px;}
+  .input-icon__img{
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform:translateY(-50%);
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    &>*{margin: auto;}
+  }
+}
+.form-item.input-icon-left{
+   input{padding-right: 18px; padding-left:40px}
+  
+  .input-icon__img{
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left:18px;
+    transform:translateY(-50%);
+    z-index: 2;
+  }
+}
+.toggle-pass{
+  cursor:pointer;
+  & + .link-accent{
+   
+    margin-top: 8px;
+    margin-left: auto;
+    width: fit-content;
+    letter-spacing: 0.04em;
+   
+  }
+ 
 }

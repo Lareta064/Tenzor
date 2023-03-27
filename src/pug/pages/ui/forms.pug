@@ -11,6 +11,7 @@ html(lang="ru")
 		//====убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
 		link(rel="stylesheet", href="../css/main.css")
+		
 		title UI-KIT
 
 	body.body-dashboard
@@ -22,4 +23,76 @@ html(lang="ru")
 				h2 Форма
 
 				.container-dashboard__content
+					ul
+						
+						li
+							.form-item
+								input(type="text" placeholder="Логин")
+							pre.
+								.form-item
+									input(type="text" placeholder="Логин")
+						li
+							.form-item
+								input(type="text" placeholder="Логин")
+								.error вы не ввели логин
+							pre.
+								.form-item
+									input(type="text" placeholder="Логин")
+						li
+							.form-item.input-icon
+								span.input-icon__img
+									.icon-warning
+								input(type="text" placeholder="Поиск")
+							pre.
+								.form-item.input-icon
+									span.input-icon__img
+										.icon-warning
+									input(type="text" placeholder="Поиск")
+						li
+							//============пароль отображается/скрывается через скрипт в main.js, который менят тип инпута.=========
+							.form-block
+								.form-item.input-icon.toggle-pass
+									span.input-icon__img
+										+svgIcon('eye')
+									input(type="password" placeholder="Пароль")
+								button.link-accent Забыли пароль?
+							pre.
+								.form-block
+									.form-item.input-icon.toggle-pass
+										span.input-icon__img
+											+svgIcon('eye')
+										input(type="password" placeholder="Пароль")
+									button.txt-accent Забыли пароль?
+						
+						li
+							.form-item.input-icon-left
+								span.input-icon__img
+									+svgIcon('search')
+								input(type="text" placeholder="Поиск")
+							pre.
+								.form-item.input-icon-left
+									span.input-icon__img
+										+svgIcon('search')
+									input(type="text" placeholder="Поиск")
+						
+						li
+							.search-panel
+								.close-btn
+								form(action="" method="method")
+
+		script.
+			document.querySelectorAll(".toggle-pass").forEach(el=>{
+				const tglBtn = el.querySelector(".input-icon__img");
+				const inputField = el.querySelector("input");
+
+				tglBtn.addEventListener("click", (e)=>{
+					const icon = tglBtn.querySelector("svg");
+
+					if(inputField.type === "password")
+						inputField.type = "text"
+					else inputField.type = "password";
+
+					icon.classList.toggle("svg-eye-active");
 					
+				});
+			});
