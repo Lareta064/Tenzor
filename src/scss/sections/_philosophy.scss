@@ -1,0 +1,42 @@
+.philosophy{
+	.philosophy-text{
+		padding-top: 62px;
+		padding-bottom: 52px;
+		flex-grow: 1;
+	}
+	.philosophy-content{
+		display: flex;
+	}
+	.title-block{
+		margin-bottom: 47px;
+	}
+	.philosophy-text .txt-italic{padding-left: 108px;}
+	
+	.philosophy-text__bottom{
+		padding-left: 43px;
+		
+	}
+}
+.philosophy-text__content.txt-19{
+	max-width: 550px;
+	margin-top: 57px;
+	p+p{margin-top: 10px;}
+}
+.picture-mosaic{
+	flex-shrink: 0;
+	display: grid;
+	row-gap: 30px;
+	column-gap:15px;
+	grid-template-columns: repeat(2, 1fr);
+	&__cell{
+		display: flex;
+		img{margin: auto; width: 181px; height: 188px; object-fit: cover;}
+	}
+	&__cell:nth-child(2), &__cell:nth-child(3){
+		img{
+			width: 278px;
+			height: 320px;
+
+		}
+	}
+}

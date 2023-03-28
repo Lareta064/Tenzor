@@ -9,9 +9,7 @@
 }
 .h2{
 	font-size: 47px;
-}
-.title-box{
-
+	text-transform: uppercase;
 }
 
 .title-15, .title-18{
@@ -26,8 +24,24 @@
 .txt-16{
 	font-size: 16px;
 }
+.txt-19{
+	font-size: 19px;
+}
+.txt-20{
+	font-size: 20px;
+}
+.txt-26{
+	font-size: 26px;
+}
+.txt-italic{
+	font-style: italic;
+}
+.txt-bold{font-weight: 700;}
 .txt-accent{
 	color: $ac1;
+}
+.title-block{
+	.title-15{padding-left: 5px;}
 }
 .link-accent{
     display: block;
