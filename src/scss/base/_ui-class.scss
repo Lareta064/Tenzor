@@ -1,4 +1,4 @@
-.flex-box, .flex-center, .flex-col, .flex-v-center, .flex-justify,.center-wrapper{
+.flex-box, .flex-center, .flex-column, .flex-v-center, .flex-justify,.center-wrapper{
 	display: flex;
 }
 .center-wrapper{
@@ -14,6 +14,9 @@
 }
 .flex-v-center{
 	align-items: center;
+}
+.flex-column{
+	flex-direction: column;
 }
 .pos-rel{position: relative;
 }

@@ -1,3 +1,7 @@
+mixin prItem(time, text)
+	.programm-list__item
+		.txt-17 #{time}
+		.txt-19.txt-medium #{text}
 //======== ПРОГРАММА =====================
 section.race-programm.divide-section
 	.container
@@ -13,22 +17,90 @@ section.race-programm.divide-section
 			.txt-19.txt-dark Серия регат Success Race
 		
 		//============= content ============
-		.divide-bg.programm-table
+		.programm-table
 			.tabs-wrapper
 				.tabs.flex-box
-					.tab.title-15 1 этап
-					.tab.title-15 2 этап
-					.tab.title-15 3 этап
+					.tab.title-15 01 этап
+					.tab.title-15 02 этап
+					.tab.title-15 03 этап
 					.tab.title-15 финал
 				
 				.tabs-content
+					//=====контент вкладки ЭТАП 1=========
 					.tab-item
-						.tab-item__title.flex-v-center
+						.programm-title.flex-v-center
 							.txt-separate.title-20.flex-v-center
 								span 20 мая
 								span Москва
 							.link-accent.txt-17 Следить за новостями
+						
+						.programm-list.flex-column
+							+prItem('10:00 - 11:00', 'Встреча гостей + welcome')
+							+prItem('11:00 - 12:00', 'Деловой завтрак с участием модераторов')
+							+prItem('12:00 - 12:30', 'Брифинг и распределение лодок для участников регаты')
+							+prItem('12:30 - 15:30', 'Регата для категории билетов Sail&Business')
+							+prItem('12:30 - 15:30', 'Лекция / mastermind группы для категории Just Business')
+							+prItem('15:30 - 16:00', 'Обед')
+							+prItem('16:00 - 17:30', 'Public Talk с министром спорта')
+							+prItem('17:30 - 19:00', 'Вечерняя программа, награждение участников регаты')
+							.programm-list__btn
+								.btn.btn--outline Узнать больше
+							
+					//=====контент вкладки ЭТАП 2 =========
+					.tab-item
+						.programm-title.flex-v-center
+							.txt-separate.title-20.flex-v-center
+								span 21 мая
+								span Москва
+							.link-accent.txt-17 Следить за новостями
+						
+						.programm-list.flex-column
+							+prItem('10:00 - 11:00', 'Завтрак')
+							
+							+prItem('12:30 - 15:30', 'Регата для категории билетов Sail&Business')
+							+prItem('12:30 - 15:30', 'Лекция / mastermind группы для категории Just Business')
+							+prItem('15:30 - 16:00', 'Обед')
+							+prItem('16:00 - 17:30', 'Public Talk с министром спорта')
+							+prItem('17:30 - 19:00', 'Вечерняя программа, награждение участников регаты')
+							.programm-list__btn
+								.btn.btn--outline Узнать больше
 					
-					.tab-item 222
-					.tab-item 333
-			
+					//=====контент вкладки ЭТАП 3=========
+					.tab-item
+						.programm-title.flex-v-center
+							.txt-separate.title-20.flex-v-center
+								span 22 мая
+								span Москва
+							.link-accent.txt-17 Следить за новостями
+						
+						.programm-list.flex-column
+							
+							+prItem('11:00 - 12:00', 'Завтрак')
+							+prItem('12:00 - 12:30', 'Брифинг ')
+							+prItem('12:30 - 15:30', 'Регата для категории билетов Sail&Business')
+							+prItem('12:30 - 15:30', 'Лекция / mastermind группы для категории Just Business')
+							+prItem('15:30 - 16:00', 'Обед')
+							+prItem('16:00 - 17:30', 'Public Talk с министром спорта')
+							+prItem('17:30 - 19:00', 'Вечерняя программа, награждение участников регаты')
+							.programm-list__btn
+								.btn.btn--outline Узнать больше
+
+					//=====контент вкладки ФИНАЛ =========
+					.tab-item
+						.programm-title.flex-v-center
+							.txt-separate.title-20.flex-v-center
+								span 22 мая
+								span Москва
+							.link-accent.txt-17 Следить за новостями
+						
+						.programm-list.flex-column
+							
+							+prItem('11:00 - 12:00', 'Деловой завтрак с участием модераторов')
+							+prItem('12:00 - 12:30', 'Экскурсия куда-нибудь')
+							+prItem('12:30 - 15:30', 'Концерт звезд эстрады')
+							
+							+prItem('15:30 - 16:00', 'Обед')
+							+prItem('17:30 - 19:00', 'Вечерняя программа, награждение участников регаты')
+							.programm-list__btn
+								.btn.btn--outline Узнать больше
+				

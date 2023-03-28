@@ -6,8 +6,16 @@
 			filter: grayscale(1);
 		}
 	}
+	.divide-img-right{
+		right:-90px;
+		img{
+			height: 400px;
+			width: 479px;
+		}
+	}
 	.divide-bg{
-		margin-top: 0;
+		margin-top: 212px;
+		padding-top: 0;
 	}
 	.title-block{
 		margin-bottom: 32px;
@@ -16,10 +24,44 @@
 			font-weight: 400;
 		}
 	}
-	.tab-item__title{column-gap:60px;}
+	.programm-title{column-gap:60px;}
 }
 .race-programm{
+	
+	.tabs-wrapper{
+		// max-width: 1200px;
+		// transform: translateY(-178px);
+	}
 	.tab-item{
-		padding-top: 43px;
+		padding-top: 45px;
+	}
+	.programm-list{
+		padding-top: 63px;
+		padding-bottom: 60px;
+		margin-top: 50px;
+		height: 540px;
+		column-gap:55px;
+		flex-wrap: wrap;
+		position: relative;
+		&>*{position: relative;
+		z-index: 2;}
+		&:after{
+			content:'';
+			background-color: $greyBg;
+			width: calc(100px + 50% + 50vw);
+			left: -100px;
+			top: 0;
+			bottom: 0;
+			position: absolute;
+		}
+	}
+	.programm-list__item{
+		margin-top: 50px;
+		max-width: 330px;
+		// padding-right: 20px;
+		.txt-17{margin-bottom: 4px;}
+	}
+	.programm-list__btn{
+		margin-top: 40px;
 	}
 }

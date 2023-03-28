@@ -43,6 +43,7 @@
 	font-style: italic;
 }
 .txt-bold{font-weight: 700;}
+.txt-medium{font-weight: 500;}
 .txt-accent{
 	color: $ac1;
 }
@@ -51,7 +52,7 @@
 }
 .link-accent{
     display: block;
-   
+    cursor:pointer;
     width: fit-content;
     padding-bottom: 1px;
 	color: $ac1;
