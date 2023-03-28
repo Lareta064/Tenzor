@@ -79,21 +79,18 @@ document.addEventListener("DOMContentLoaded", function (){
 
    }
 
-	// //========большой сладер документов =======//
-	// let docSlider = new Swiper(".doc-slider", {
-    //    slidesPerView: 1,
-	//    spaceBetween: 24,
-    //    pagination: {
-	// 		el: ".doc-slider-pagination",
-	// 		clickable: true,
-	// 	},
-	// 	navigation: {
-    //       nextEl: ".doc-slider-next",
-    //       prevEl: ".doc-slider-prev",
-    //     },
-	// 	speed:800,
-	// 	loop: true
-    //   });
+	//========большой сладер документов =======//
+	let speakerSlider = new Swiper(".speakers-slider", {
+       slidesPerView: 4,
+	   spaceBetween: 30,
+       
+		navigation: {
+          nextEl: ".speakers-next",
+          prevEl: ".speakers-prev",
+        },
+		speed:800,
+		loop: false
+      });
 
 	// //========slider в мод окне-12 =======//
 	// let categorCardsSlider = new Swiper(".categody-cards__swiper", {

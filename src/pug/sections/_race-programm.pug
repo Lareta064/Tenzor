@@ -2,6 +2,16 @@ mixin prItem(time, text)
 	.programm-list__item
 		.txt-17 #{time}
 		.txt-19.txt-medium #{text}
+mixin swpSlide(title, text)
+	.swiper-slide
+		.info-card
+			.info-card__img
+				img(src="./img/speaker.jpg", width="279" height="279" alt="img")
+			.info-card__title
+				.title-18 Имя Фамилия
+				.txt-15 #{title}
+			if text
+				.info-card__text.txt-17.txt-medium #{text}
 //======== ПРОГРАММА =====================
 section.race-programm.divide-section
 	.container
@@ -103,4 +113,36 @@ section.race-programm.divide-section
 							+prItem('17:30 - 19:00', 'Вечерняя программа, награждение участников регаты')
 							.programm-list__btn
 								.btn.btn--outline Узнать больше
+	
+	//========== СПИКЕРЫ =============
+	.speakers
+		.container
+			.title-block.flex-v-center
+				.h2 Спикеры
 				
+				//===== навигация для speakers-slider =======
+				.speakers-slider-nav.flex-v-center
+					.speakers-prev.swiper-prev
+						+svgIcon('chevron-right')
+					.speakers-next.swiper-next
+						+svgIcon('chevron-right')
+			
+			//===== speakers-slider =======
+			.speakers-slider.swiper
+				.swiper-wrapper
+					+swpSlide('должность спикера лорем ипсум лорем', 'Тема доклада в три строки, можно скрыть, если не нужно ее выводить')
+					+swpSlide('должность спикера ', 'Тема доклада в три строки')
+					+swpSlide('должность спикера лорем ипсум лорем')
+					+swpSlide('должность спикера лорем ипсум лорем', 'Тема доклада в три строки, можно скрыть, если не нужно ее выводить')
+					+swpSlide('должность спикера лорем ', 'Тема доклада в три строки, можно скрыть, если не нужно ее выводить')
+					+swpSlide('должность спикера лорем ипсум лорем', 'Тема доклада в три строки, можно скрыть, если не нужно ее выводить')
+					+swpSlide('должность спикера лорем ипсум лорем')
+			
+			//===== кнопки под слайдером =========
+			.speakers-buttons.flex-center
+				a(href="#!").btn Стать участником
+				a(href="#!").btn Стать спонсором
+
+				
+
+
