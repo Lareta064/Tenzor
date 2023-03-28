@@ -1,4 +1,5 @@
 mixin headerMenu(obj)
+	//========== меню в шапке ==============
 	.header-menu#header-menu
 		ul
 			each item in obj
@@ -11,7 +12,7 @@ mixin headerMenu(obj)
 					
 					
 mixin fullMenu(arg)
-	//============ большое меню на белом фоне, отображается по ховеру на ссылки в меню при помощи скрипта в main.js ============
+	//============ большое меню на белом фоне, отображается по ховеру на ссылки  ============
 	.full-menu#full-menu
 		.container
 			.full-menu__content
@@ -58,18 +59,28 @@ mixin header(arg)
 					
 					.contacts-wrapper
 						a(href="tel:84951213777") +7(495) 121-3-777
+					
+					//======== блок с иконками ========
 					.header-group.flex-v-center
+						//===== icon map =======
 						.button-icon
 							+svgIcon('map-pin')
+						
+						//===== icon user =======
 						.button-icon
 							+svgIcon('user')
+						
+						//===== icon  лупа =======
 						.button-icon(frame-btn="search-panel")
 							+svgIcon('search')
+					
+					//======== блок с языками ========
 					.header-lang
 						a(href="#!").txt-gray Rus
 						a(href="#!") Eng
-			//=========большое меню на белом фоне =========
 			+fullMenu
+		
+		//======= первый экран в шапке =========
 		.header-content.mt-186
 			.container-xl.pos-rel
 				.header-social.pos-abs
