@@ -22,3 +22,14 @@
 		overflow: hidden;
 	}
 }
+.mark-list-card{
+	background-color: $greyBg;
+	max-width: 588px;
+	padding-top: 55px;
+	padding-left: 60px;
+	padding-right: 30px;
+	padding-bottom: 60px;
+	&>.title-20{
+		margin-bottom: 25px;
+	}
+}
