@@ -31,3 +31,20 @@
 		}
 	}
 }
+.mark-list{
+	li{
+		position: relative;
+		padding-left: 40px;
+		&:before{
+			display: inline-block;
+			content:'';
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M20.5 6.75L9.5 17.75L4.5 12.75' stroke='%23BC863D' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+		}
+	}
+}
