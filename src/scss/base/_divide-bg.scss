@@ -28,6 +28,10 @@
 		transform: translateX(-100%);
 		background-position: right;
 		z-index: 3;
+		img{
+			width:auto;
+			object-fit: cover;
+		}
 	}
 	.divide-img-right{
 		position: absolute;
@@ -35,8 +39,7 @@
 		right: -100px;
 		z-index: 3;
 		img{
-			width: 685px;
-			height: 455px;
+			
 			object-fit: cover;
 		}
 	}

@@ -12,17 +12,23 @@
 	text-transform: uppercase;
 }
 
-.title-15, .title-18{
+.title-15, .title-18,.title-20{
 	letter-spacing: 0.15em;
 	font-size: 15px;
-	font-weight: 600;
+	font-weight: 600;text-transform: uppercase;
 }
-.title-15{text-transform: uppercase;}
+
 .title-18{
 	font-size: 18px;
 }
+.title-20{
+	font-size: 20px;
+}
 .txt-16{
 	font-size: 16px;
+}
+.txt-17{
+	font-size: 17px;
 }
 .txt-19{
 	font-size: 19px;
@@ -45,11 +51,8 @@
 }
 .link-accent{
     display: block;
-    margin-top: 8px;
-    margin-left: auto;
+   
     width: fit-content;
-    letter-spacing: 0.04em;
-    font-size: 15px;
     padding-bottom: 1px;
 	color: $ac1;
     border-bottom:1px solid $ac1;
@@ -67,3 +70,19 @@
 	text-transform: uppercase;
 }
 .mt-186{margin-top: 186px;}
+.txt-separate{
+	&>*{padding-right: 40px;}
+	&>*:last-child{padding-right: 0;}
+	&>*+*{
+		padding-left: 40px;
+		position: relative;
+		&:before{
+			content: '|';
+			position: absolute;
+			left: -1px;
+			top:1px;
+			font-size: 18px;
+			color: $base;
+		}
+	}
+}

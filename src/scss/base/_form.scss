@@ -61,9 +61,11 @@ select:-webkit-autofill:focus {
   }
  
 }
-.search-panel-form{
-
+.form-item .txt-accent{
+  font-size: 15px;
+    letter-spacing: 0.04em;
 }
+
 .form-item.form-item--search{
   input{
     border: none;

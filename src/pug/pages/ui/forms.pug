@@ -11,7 +11,7 @@ html(lang="ru")
 		//====убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
 		link(rel="stylesheet", href="../css/main.css")
-		
+		script(src="../libs/jquery/jquery-3.0.0.min.js")
 		title UI-KIT
 
 	body.body-dashboard
@@ -74,6 +74,19 @@ html(lang="ru")
 									span.input-icon__img
 										+svgIcon('search')
 									input(type="text" placeholder="Поиск")
+
+						li
+							.tabs-wrapper
+								.tabs.flex-box
+									.tab.title-15 1 этап
+									.tab.title-15 2 этап
+									.tab.title-15 3 этап
+									.tab.title-15 финал
+								
+								.tabs-content
+									.tab-item 111
+									.tab-item 222
+									.tab-item 333
 						
 						
 
@@ -92,4 +105,15 @@ html(lang="ru")
 					icon.classList.toggle("svg-eye-active");
 					
 				});
+			});
+
+		script.
+			/* tabs*/
+			$('.tabs-wrapper').each(function() {
+				let ths = $(this);
+				ths.find('.tab-item').not(':first').hide();
+				ths.find('.tab').click(function() {
+					ths.find('.tab').removeClass('active').eq($(this).index()).addClass('active');
+					ths.find('.tab-item').hide().eq($(this).index()).fadeIn()
+				}).eq(0).addClass('active');
 			});
