@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (){
-
+ 	AOS.init();
 	/* ==============показать модальные окна,  имеют атрибут frame-modal , кнопка, которая его показывает , имеет атрибут frame-btn, Чтобы закрыть такое окно, прописываем кнопке закрытия атрибут frame-close*/
 	const modalFramesOpen = document.querySelectorAll('[frame-btn]');
 	const modalFrames = document.querySelectorAll('[frame-modal]');
