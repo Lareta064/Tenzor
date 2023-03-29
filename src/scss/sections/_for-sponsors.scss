@@ -1,0 +1,23 @@
+.for-sponsors{
+	padding-top: 94px;
+	.for-sponsors__text{
+		max-width: 794px;;
+	}
+}
+.partners{padding-top: 44px;}
+.partners-logo{
+	display: grid;
+	column-gap:34px;
+	max-width: 1848px;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: repeat(auto-fit, 232px);
+}
+.our-possib{padding-top: 50px;}
+.our-possib__col{
+	display: flex;
+	flex-direction: column;
+	.mark-list-card +.mark-list-card{margin-top: 30px;}
+}
+.our-possib__text{margin-top: 40px;}
+.our-possib__btn{margin-top: auto;}
