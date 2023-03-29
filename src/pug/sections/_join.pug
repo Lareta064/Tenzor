@@ -6,61 +6,69 @@ section.join.bg-img-section.overlay-block(style="background-image:url(./img/race
 			.h2 Участие
 		
 		.join-content
-			//====== single card ======
-			.mark-list-card
-				.title-20 Just business
-				.mark-list
-					ul
-						li Бизнес: деловой завтрак, Mastermind группы, PuЫic Talk с министром спорта
-						li Церемония закрытия
-						li Награждение с подарками от премиум брендов
-						li Услуги фотографа и видеографа
-						li SAIL & Business KIT
-				
-				//=====card price block ====
-				.mark-list-card__footer
-					.price-block.flex-v-center
-						.price-block__text
-							.txt-14.txt-upper.txt-gray Стоимость
-							.title-20 50 000 руб.
-						.price-block__btn
-							button.btn.btn--56 Оплатить участие
-			
-			//====== single card ======
-			.mark-list-card
-				.title-20 Sail & business
-				.mark-list
-					ul
-						li Услуги профессионального шкипера 
-						li Участие в гонках 
-						li Бизнес: деловой завтрак, PuЫic Talk с министром спорта 
-						li Церемония закрытия 
-						li Награждение с подарками от премиум брендов 
-						li Услуги фотографа и видеографа SAIL & Business KIT
-				
-				//=====card price block ====
-				.mark-list-card__footer
-					form
-						label.fake-radio.fake-radio--big
-							.fake-radio-group
-								input(type="radio" name="join-summ" checked)
-								span
-							
-							.fake-radio-text
-								.txt-14 Стоимость
-								.title-20 250 000 руб./лодка
-						
+			//==== right column ======
+			.join-content__col
+				//====== single card ======
+				.mark-list-card
+					.title-20 Just business
+					.mark-list
+						ul
+							li Бизнес: деловой завтрак, Mastermind группы, PuЫic Talk с министром спорта
+							li Церемония закрытия
+							li Награждение с подарками от премиум брендов
+							li Услуги фотографа и видеографа
+							li SAIL & Business KIT
+					
+					//=====card price block ====
+					.mark-list-card__footer
 						.price-block.flex-v-center
 							.price-block__text
-								label.fake-radio.fake-radio--big
-									.fake-radio-group
-										input(type="radio" name="join-summ")
-										span
-									
-									.fake-radio-text
-										.txt-14 Стоимость
-										div
-											.title-20 80 000 руб
-								.body-14 Индивидуальное участие в составе сборной команды
+								.txt-14.txt-upper.txt-gray Стоимость
+								.title-20 50 000 руб.
 							.price-block__btn
 								button.btn.btn--56 Оплатить участие
+			
+				.join-content__text
+					.txt-15.txt-italic *В стоимость не входят перелет и проживание. Мы предоставим для вас персонального менеджера, который сможет помочь с бронированием билетов, отелей по специальным ценам для участников бизнес регаты.
+					.txt-15.txt-italic **Стоимость лодки без шкипера под запрос.
+				
+			//===== left column =======
+			.join-content__col
+				//====== single card ======
+				.mark-list-card
+					.title-20 Sail & business
+					.mark-list
+						ul
+							li Услуги профессионального шкипера 
+							li Участие в гонках 
+							li Бизнес: деловой завтрак, PuЫic Talk с министром спорта 
+							li Церемония закрытия 
+							li Награждение с подарками от премиум брендов 
+							li Услуги фотографа и видеографа SAIL & Business KIT
+					
+					//=====card price block ====
+					.mark-list-card__footer
+						form
+							label.fake-radio.fake-radio--big
+								.fake-radio-group
+									input(type="radio" name="join-summ" checked)
+									span
+								
+								.fake-radio-text
+									.txt-14 Стоимость
+									.title-20 250 000 руб./лодка
+							
+							.price-block.flex-v-center
+								.price-block__text
+									label.fake-radio.fake-radio--big
+										.fake-radio-group
+											input(type="radio" name="join-summ")
+											span
+										
+										.fake-radio-text
+											.txt-14 Стоимость
+											div
+												.title-20 80 000 руб
+									.body-14 Индивидуальное участие в составе сборной команды
+								.price-block__btn
+									button.btn.btn--56 Оплатить участие

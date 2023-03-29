@@ -15,3 +15,8 @@
 .mark-list-card__footer .fake-radio + .price-block{
 	margin-top: 26px;
 }
+.join-content__text	{
+	padding-top: 42px;
+	&>*+*{margin-top: 12px;}
+	color: #ffffff;
+}
