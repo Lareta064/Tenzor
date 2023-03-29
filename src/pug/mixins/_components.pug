@@ -1,11 +1,11 @@
 mixin benefitItem(img, text1, text2, wdt, hgt)
 	.benefit-item.flex-box
 		.round-icon.flex-center
-			img(src="../img/icons/"+ img+".png", width=""+ wdt height=" "+ hgt alt="icon")
+			img(src="./img/icons/"+ img+".png", width=""+ wdt height=" "+ hgt alt="icon")
 		.benefit-text
 			.txt-16.txt-accent  !{text1}
 			.title-18  !{text2}
 
 mixin svgIcon(svgId)
 	svg(class="svg-"+ svgId)
-		use(href="../img/svg-sprite.svg#svg-"+ svgId +"")
+		use(href="./img/svg-sprite.svg#svg-"+ svgId +"")

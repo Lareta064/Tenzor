@@ -26,10 +26,25 @@
 	background-color: $greyBg;
 	max-width: 588px;
 	padding-top: 55px;
-	padding-left: 60px;
-	padding-right: 30px;
 	padding-bottom: 60px;
 	&>.title-20{
 		margin-bottom: 25px;
+		padding-left: 60px;
+		padding-right: 33px;
+	}
+	ul{
+		padding-left: 60px;
+		padding-right: 33px;
+	}
+	.mark-list-card__footer	{
+		padding-top: 30px;
+		padding-left: 60px;
+		padding-right: 0;
+	}
+	.price-block{
+		
+		.btn{
+			border-radius: 7px 0 0 7px;
+		}
 	}
 }

@@ -47,10 +47,11 @@
 
 		}
 	}
-	li+li{margin-top: 7px;}
+	li+li{margin-top: 10px;}
 }
 .price-block{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	.txt-14{margin-bottom: 7px;}
 }

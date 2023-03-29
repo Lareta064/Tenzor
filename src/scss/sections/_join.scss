@@ -1,0 +1,17 @@
+.join{
+	background-color: rgba(9, 29, 43, 1);
+	padding-top: 75px;
+	padding-bottom: 105px;
+	.join-content{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 30px;
+		.mark-list-card{
+			align-self: flex-start;
+		}
+	}
+}
+.price-block__text label + .body-14{padding-left: 42px;}
+.mark-list-card__footer .fake-radio + .price-block{
+	margin-top: 26px;
+}
