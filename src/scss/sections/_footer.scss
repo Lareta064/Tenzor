@@ -5,12 +5,14 @@
 .footer-top{
 	padding-top: 90px;
 	padding-bottom: 90px;
+
 }
 .footer-content{
 	position: relative;
 	display: grid;
 	grid-template-columns: 389px 238px 1fr;
 	column-gap:124px;
+	.title-15{margin-bottom: 33px;}
 	.footer-logo{
 		top: -7px;
 		left: -100px;
@@ -29,4 +31,35 @@
 }
 .footer-contacts__bottom{
 	margin-top: 50px;
+}
+.footer-menu-column{
+	ul a{color: #ffffff; &:hover{color: $ac1;}}
+	ul>li {
+		font-weight: 600;
+		font-size: 15px;
+		
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		.submenu-list{
+			padding-bottom: 26px;
+			padding-top: 33px;
+			a{
+				font-weight: 300;
+				font-size: 15px;
+				line-height: 110%;
+				letter-spacing: 0.04em;
+				color: $ac1;
+				padding-top: 7px;
+				padding-bottom: 7px;
+				text-transform: none;
+				display: block;
+				width: fit-content;
+				transform: .3s;
+				&:hover{color: rgba(255,255,255, .7)}
+			}
+		}
+	}
+	ul{
+		li +li {margin-top: 24px;}
+	}
 }
