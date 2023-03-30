@@ -58,16 +58,22 @@
 	.title-15{padding-left: 5px;}
 	margin-bottom: 42px;
 }
-.link-accent{
+.link-accent, .link-text{
     display: block;
     cursor:pointer;
     width: fit-content;
-    padding-bottom: 1px;
 	color: $ac1;
-    border-bottom:1px solid $ac1;
+	border-bottom:1px solid $ac1;
+	padding-bottom: 1px;
     &:hover{
       opacity: .5;
     }
+}
+.link-text{
+	border-bottom:1px solid transparent;
+	   &:hover{
+    		 border-bottom:1px solid $ac1;
+   	 	}
 }
 .txt-dark{
 	color: $dark;

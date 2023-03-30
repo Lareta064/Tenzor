@@ -14,17 +14,7 @@ header.header{
 		align-items: center;
 		column-gap:22px
 	}
-	.contacts-wrapper{
-		white-space: nowrap;
-		a{
-			color: $white;
-			transition: .3s;
-			&:hover{
-				color: $ac1;
-			}
-			
-		}
-	}
+	
 	.header-group{
 		column-gap:30px;
 
@@ -47,6 +37,17 @@ header.header{
 	.header-social{
 		bottom: 0;
 		left: 0;
+	}
+}
+.contacts-wrapper{
+	white-space: nowrap;
+	a{
+		color: $white;
+		transition: .3s;
+		&:hover{
+			color: $ac1;
+		}
+		
 	}
 }
 .header-lang{

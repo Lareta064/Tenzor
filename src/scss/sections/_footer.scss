@@ -1,0 +1,32 @@
+.footer{
+	color: #ffffff;
+	background-color:  $footerBg;
+}
+.footer-top{
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.footer-content{
+	position: relative;
+	display: grid;
+	grid-template-columns: 389px 238px 1fr;
+	column-gap:124px;
+	.footer-logo{
+		top: -7px;
+		left: -100px;
+	}
+	p{
+		font-size: 15px;
+		letter-spacing: 0.03em;
+		margin-bottom: 10px;
+	}
+}
+.footer-contacts__center{
+	margin-top: 45px;
+	.contacts-wrapper{
+		margin-bottom: 8px;
+	}
+}
+.footer-contacts__bottom{
+	margin-top: 50px;
+}
